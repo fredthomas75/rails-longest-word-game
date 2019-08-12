@@ -1,11 +1,17 @@
 <h1>New game</h1>
+  <div class="row justify-content-md-center">
+  <div class="col-7">
 <div class="list_letter"><ul>
   <% @letters.each do |letter| %>
   <li class="btn btn-secondary list"><%= letter %></li>
   <% end %>
 </ul>
 </div>
+</div>
+</div>
 
+  <div class="row justify-content-md-center">
+  <div class="col-7">
 <form action="/score" method="post">
   <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
   <%= hidden_field_tag :letters, @letters %>
@@ -15,4 +21,6 @@
         <input class="btn btn-primary" type="submit" value="Play">
       </div>
   </div>
+</div>
 </form>
+</div>

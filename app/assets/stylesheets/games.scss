@@ -2,8 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .list {
-  margin: 12px;
   justify-content: center;
+  margin: 12px;
 }
  .list_letter {
   display: flex;
@@ -12,4 +12,8 @@
 
  h1 {
   text-align: center;
+ }
+
+ .container {
+  width: 50%;
  }
